@@ -3,8 +3,10 @@
  */
 package com.examen.ejercicio4;
 
+
 /**
- * @author Alumno
+ * @author Rafael Martín
+ * Descripción: Calse Libro que define los atributos, y metodos
  *
  */
 public class Libro {
@@ -83,21 +85,14 @@ public class Libro {
 		this.precio = precio;
 	}
 
+	// Declaración método toString
 	@Override
 	public String toString() {
 		return "Libro [isbn=" + isbn + ", titulo=" + titulo + ", autor=" + autor + ", categoria=" + categoria
 				+ ", anyo=" + anyo + ", precio=" + precio + "]";
 	}
-	
-	// Declaración método toString
-	
-	
-	
-	
-	
-	
-	
-	
+
+
 	
 
 }

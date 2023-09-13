@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package com.examen.ejercicio1;
 
 import java.util.ArrayList;
@@ -69,18 +67,12 @@ public class Alumno {
 		return "Datos del Alumno: \nNombre: " + nombre + " \nApellidos: " + apellidos + " \nEdad: " + edad;
 	}
 
-	
-	
-	/*public void crearAlumno(Alumno alumnos) {
-		alumnos
+	// Método para mostrar los datos
+	public void mostrarDatos() {
+		System.out.println("Nombre: " + nombre);
+		System.out.println("Apellidos: " + apellidos);
+		System.out.println("Edad: " + edad);
 		
-	}*/
-	
-	/*public void mostrarAlumno() {
-		for (int i = 0; i < alumnos.size(); i++) {
-			System.out.println(alumnos.get(i));
-		}
-		
-	}*/
+	}
 
 }

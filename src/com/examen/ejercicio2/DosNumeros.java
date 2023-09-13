@@ -67,54 +67,39 @@ public class DosNumeros {
 		boolean verdadero = true;
 		while(verdadero) {
 			int opcion = sc.nextInt();
-			
-			switch (opcion) {
-				case 1:
-					System.out.println("\nLa suma de los dos número es: " + suma(numero1, numero2));
-					break;
-				
-				case 2:
-					System.out.println("La resta de los dos número introducidos es: " + resta(numero1,numero2));
-					break;
-					
-				case 3:
-					System.out.println("El producto de los dos número introducidos es: " + producto(numero1,numero2));
-					break;
-		
-				case 4:
-					if (numero2 == 0) {
-						System.out.println("Error division por cero");
-					}else {
-						System.out.println("La división de los dos número introducidos es: " + division((double)numero1,(double)numero2));
-					}
-					break;
-					
-				case 5:
-					System.out.println("Este es el Array de 10 números");
-					mostrarArray();
-					break;
-					
-				case 6:
-					System.out.println("Fin del programa");
-					verdadero = false;
-					break;
-			}
+
+            switch (opcion) {
+                case 1 -> System.out.println("\nLa suma de los dos número es: " + suma(numero1, numero2));
+                case 2 -> System.out.println("La resta de los dos número introducidos es: " + resta(numero1, numero2));
+                case 3 ->
+                        System.out.println("El producto de los dos número introducidos es: " + producto(numero1, numero2));
+                case 4 -> {
+                    if (numero2 == 0) {
+                        System.out.println("Error division por cero");
+                    } else {
+                        System.out.println("La división de los dos número introducidos es: " + division((double) numero1, (double) numero2));
+                    }
+                }
+                case 5 -> {
+                    System.out.println("Este es el Array de 10 números");
+                    mostrarArray();
+                }
+                case 6 -> {
+                    System.out.println("Fin del programa");
+                    verdadero = false;
+                }
+            }
 		};
 		
-		
-		
-	
-	
-	// Se declaran los métodos	
+
 		
 	}
 	
-	
+	// Se declaran los métodos
 	private static void mostrarNumero(int num) {
 		System.out.print(num + " ");
 		
 	}
-
 
 	
 	public static int suma(int x, int y) {

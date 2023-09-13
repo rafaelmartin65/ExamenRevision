@@ -4,75 +4,33 @@
 package com.examen.ejercicio1;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 /**
  * @author Rafael Martín
- * Descripción: Calse Alumno en Java
+ * Descripción: Clase Main en Java
  *
  */
 public class Main {
 
-	/**
-	 * @param args
-	 */
-	
-	
-	
+
 	public static void main(String[] args) {
-		
-		String nombre;
-		String apellidos;
-		int edad;
-		
-		
-		// Declarar objeto Alumno
-		Alumno alumno = new Alumno();
-		
+
+		// Declarar array con ArrayList
 		ArrayList<Alumno> alumnos = new ArrayList<>();
 		
-		// Creara un Alumno
-		alumno.setNombre("Rafael");
-		alumno.setApellidos("Martin");
-		alumno.setEdad(58);
+		// Inicializar el array
+		alumnos.add(new Alumno("Rafael", "Martin R.",37));
+		alumnos.add(new Alumno("Mary", "Gonzalez P.",32));
+		alumnos.add(new Alumno("Pepe","Gonzalez",35));
+
+
+		for (Alumno alumno : alumnos){
+			System.out.println("Alumno----- ");
+			alumno.mostrarDatos();
+			System.out.println();
+		}
 		
-		alumnos.add(alumno);
-		
-		System.out.println(alumnos.toString());
-				
-		
-		
-				
-				
-		
-		
-		/*Scanner teclado = new Scanner(System.in);
-		
-		System.out.println("Introduzca el nombre del alumno: ");
-		nombre = teclado.nextLine();
-		alumno.setNombre(nombre);
-		
-		System.out.println("Introduzca los apellidos del alumno: ");
-		apellidos = teclado.nextLine();
-		alumno.setApellidos(apellidos);
-		
-		System.out.println("Introduzca la edad del alumno: ");
-		edad = teclado.nextInt();
-		alumno.setEdad(edad);
-		
-		alumno.
-		
-		alumnos.add(alumno);
-		
-		
-		// Mostrar Alumnno por pantalla
-				alumno.mostrarAlumno();
-		
-		
-		// añadir alumno al string
-		
-		System.out.println(alumno.toString());
-		teclado.reset();*/
+
 
 	}
 	
